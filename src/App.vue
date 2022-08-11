@@ -2,6 +2,7 @@
   <div class="row" style="margin-bottom: 30px">
     <input v-model="todoStore.val" class="form-control col" type="text" />
     <button class="btn btn-primary col" @click="todoStore.addItem">add</button>
+    <div>{{todoStore.val}}</div>
   </div>
 
   <div>
