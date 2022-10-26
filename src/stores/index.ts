@@ -21,8 +21,13 @@ export const useTodoStore = defineStore("todo", () => {
     });
     val.value = "";
   };
+  // 异步函数 返回一个 promise
+  async function fun() {
+    return "123";
+  }
   return {
     addItem,
+    fun,
     val,
     items,
   };
